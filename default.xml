@@ -11,6 +11,7 @@
     <remote fetch="https://github.com/OSSystems" name="OSSystems" />
     <remote fetch="https://github.com/kraj" name="clang" />
     <remote fetch="https://github.com/varigit" name="variscite" />
+    <remote fetch="https://github.com/Mountz/meta-argus-apps.git" name="argus-apps" />
 
     <project remote="yocto" revision="6505459809380ddcf152a09343e4dc55038de332" upstream="kirkstone"
         name="poky" path="sources/poky" />
@@ -54,5 +55,6 @@
         upstream="kirkstone" name="meta-variscite-sdk" path="sources/meta-variscite-sdk">
         <linkfile src="scripts/var-setup-release.sh" dest="var-setup-release.sh" />
     </project>
-
+    <project remote="argus-apps" revision="84bde67237ede9af671623468f56df816ca5c900"
+        name="meta-argus-apps" path="sources/meta-argus-apps" />
 </manifest>
