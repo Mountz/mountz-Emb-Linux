@@ -46,6 +46,12 @@
   <project remote="argus-apps"
            revision="4a68489acb5a325dcb648e511f49a516b45a424c"
            name="meta-argus-apps"
-           path="sources/meta-argus-apps"/>
+           path="sources/meta-argus-apps">
+
+    <linkfile src="conf/templates/argus/bblayers.conf.sample"
+              dest="sources/base/conf/bblayers.conf"/>
+    <linkfile src="conf/templates/argus/local.conf.sample"
+              dest="sources/base/conf/local.conf"/>
+  </project>
 
 </manifest>
