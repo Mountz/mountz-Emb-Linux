@@ -44,7 +44,7 @@
 
   <!-- 🔹 ADD THIS PROJECT -->
   <project remote="argus-apps"
-           revision="4a68489acb5a325dcb648e511f49a516b45a424c"
+           revision="e050cb16362d5cfb31997b6a335ecd72fa244808"
            name="meta-argus-apps"
            path="sources/meta-argus-apps">
 
