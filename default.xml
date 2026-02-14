@@ -14,7 +14,7 @@
   <remote fetch="https://github.com/varigit"       name="variscite"/>
 
   <!-- 🔹 ADD THIS REMOTE -->
-  <remote fetch="https://github.com/Mountz" name="argus-apps"/>
+  <remote name="github-ssh" fetch="ssh://git@github.com/" />
 
   <project remote="yocto-gh"  revision="6505459809380ddcf152a09343e4dc55038de332" upstream="kirkstone"   name="poky"                    path="sources/poky"/>
   <project remote="yocto"     revision="d9f77788e1902a7d999958575a955e701c1c1b61" upstream="kirkstone"   name="meta-freescale"          path="sources/meta-freescale"/>
@@ -43,9 +43,9 @@
   </project>
 
   <!-- 🔹 ADD THIS PROJECT -->
-  <project remote="argus-apps"
+  <project remote="github-ssh"
            revision="e050cb16362d5cfb31997b6a335ecd72fa244808"
-           name="meta-argus-apps"
+           name="Mountz/meta-argus-apps.git"
            path="sources/meta-argus-apps">
 
     <linkfile src="conf/templates/argus/bblayers.conf.sample"
