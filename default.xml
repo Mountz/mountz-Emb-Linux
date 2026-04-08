@@ -41,7 +41,7 @@
   </project>
 
   <project remote="github-ssh"
-           revision="84423818df76e973ded0cc985d9806ddf63d5ba4"
+           revision="600be97099e0e059db285e80c760246e24659cb7"
            name="Mountz/meta-argus-apps.git"
            path="sources/meta-argus-apps">
     <linkfile src="conf/templates/argus/bblayers.conf.sample"
