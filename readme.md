@@ -17,13 +17,14 @@ $> repo sync -j 8
 ## Configure build (1st Time)
 
 ```
-$> MACHINE=imx8mp-var-dart DISTRO=fslc-xwayland . var-setup-release.sh build_xwayland
+$> TEMPLATECONF=${PWD}/sources/meta-argus-apps/conf/templates/argus \
+   . sources/poky/oe-init-build-env build_xwayland
 ```
 
 ## Configure build (Other Times)
 
 ```
-$> source setup-environment build_xwayland
+$> . sources/poky/oe-init-build-env build_xwayland
 ```
 
 ## Kickoff Build
