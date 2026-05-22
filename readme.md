@@ -18,13 +18,13 @@ $> repo sync -j 8
 
 ```
 $> TEMPLATECONF=${PWD}/sources/meta-argus-apps/conf/templates/argus \
-   . sources/poky/oe-init-build-env build_xwayland
+   . sources/poky/oe-init-build-env build_xwayland > /dev/null
 ```
 
 ## Configure build (Other Times)
 
 ```
-$> . sources/poky/oe-init-build-env build_xwayland
+$> . sources/poky/oe-init-build-env build_xwayland > /dev/null
 ```
 
 ## Kickoff Build
