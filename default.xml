@@ -44,7 +44,7 @@
   </project>
 
   <project remote="github-ssh"
-           revision="4b65aecc576a2b12a36089b5776c7154acc2a1ba"
+           revision="e88a7fb1975de0adff0dcbeecf5d06e424b9569c"
            name="Mountz/meta-argus-apps.git"
            path="sources/meta-argus-apps"/>
 
