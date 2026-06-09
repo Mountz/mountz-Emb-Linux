@@ -14,6 +14,25 @@ $> repo init git@github.com:Mountz/mountz-Emb-Linux.git
 $> repo sync -j 8
 ```
 
+## Configure build (1st Time)
+
+```
+$> TEMPLATECONF=${PWD}/sources/meta-argus-apps/conf/templates/argus \
+   . sources/poky/oe-init-build-env build_xwayland > /dev/null
+```
+
+## Configure build (Other Times)
+
+```
+$> . sources/poky/oe-init-build-env build_xwayland > /dev/null
+```
+
+## Kickoff Build
+
+```
+$> bitbake fsl-image-qt5
+```
+
 ## Docker Yocto Builder
 
 The recommended Docker-based build environment is provided by the
@@ -64,23 +83,4 @@ For the full builder documentation, see:
 
 ```
 ../argus-yocto-docker-builder/readme.md
-```
-
-## Configure build (1st Time)
-
-```
-$> TEMPLATECONF=${PWD}/sources/meta-argus-apps/conf/templates/argus \
-   . sources/poky/oe-init-build-env build_xwayland > /dev/null
-```
-
-## Configure build (Other Times)
-
-```
-$> . sources/poky/oe-init-build-env build_xwayland > /dev/null
-```
-
-## Kickoff Build
-
-```
-$> bitbake fsl-image-qt5
 ```
