@@ -6,6 +6,7 @@
   <remote fetch="https://github.com/yoctoproject"    name="yocto-gh"/>
   <remote fetch="https://github.com/Freescale"       name="freescale"/>
   <remote fetch="https://git.openembedded.org"       name="oe"/>
+  <remote fetch="https://git.yoctoproject.org"       name="yocto-git"/>
   <remote fetch="https://github.com/meta-qt5"        name="QT5"/>
   <remote fetch="https://github.com/sbabic"          name="sbabic"/>
   <remote fetch="https://github.com/OSSystems"       name="OSSystems"/>
@@ -16,8 +17,10 @@
 
   <project remote="yocto-gh"  revision="6505459809380ddcf152a09343e4dc55038de332" upstream="kirkstone"        name="poky"                    path="sources/poky"/>
   <project remote="freescale" revision="d9f77788e1902a7d999958575a955e701c1c1b61" upstream="kirkstone"        name="meta-freescale"          path="sources/meta-freescale"/>
+  <!-- Includes meta-oe and meta-webserver as sublayers. -->
   <project remote="oe"        revision="82c75b466e55d7dca7a2364986ecb704cf63d141" upstream="kirkstone"        name="meta-openembedded"       path="sources/meta-openembedded"/>
   <project remote="oe"        revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" upstream="kirkstone"        name="meta-python2"            path="sources/meta-python2"/>
+  <project remote="yocto-git" revision="783826eceb1b09496099f00a008062c0f9f4ee4e" upstream="kirkstone"        name="meta-cloud-services"     path="sources/meta-cloud-services"/>
 
   <project remote="variscite" revision="0fd2cb428a54925f74b21a340274249781f53efa"                             name="variscite-bsp-base"      path="sources/base">
     <linkfile dest="README" src="README"/>
@@ -41,13 +44,8 @@
   </project>
 
   <project remote="github-ssh"
-           revision="75d370110514e062ee71c62213a1475ee147e747"
+           revision="cfca53eccc6b8194bffb0651196e26b2941ac4a9"
            name="Mountz/meta-argus-apps.git"
-           path="sources/meta-argus-apps">
-    <linkfile src="conf/templates/argus/bblayers.conf.sample"
-              dest="sources/base/conf/bblayers.conf"/>
-    <linkfile src="conf/templates/argus/local.conf.sample"
-              dest="sources/base/conf/local.conf"/>
-  </project>
+           path="sources/meta-argus-apps"/>
 
 </manifest>
